@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>AnimateCss</title>
+</head>
+<body>
+<p>Watch Demo:<a href="https://codepen.io/shazvan275/pen/KXOEEX">https://codepen.io/shazvan275/pen/KXOEEX</a></p>
+<div class="sreensavercss">
+   <div class="x">
+      <div class="y">
+         <div class="containerscreensaver">
+            <div class="cubescreen">
+               <div class="front">
+                  <a href="#front"><i class="esat_logo2_LOGO"></i></a>
+               </div>
+               <div class="back"><a href="#back"><i class="esat_logo2_LOGO"></i></a></div>
+               <div class="right"><a href="#right"><i class="esat_logo2_LOGO"></i></a></div>
+               <div class="left"><a href="#left"><i class="esat_logo2_LOGO"></i></a></div>
+               <div class="top"><a href="#top"><i class="esat_logo2_LOGO"></i></a></div>
+               <div class="bottom"><a href="#bottom"></a></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</body>
+<style>
+.sreensavercss .x {
+   animation: x 13s linear infinite alternate; 
+   position:absolute;
+}
+
+.sreensavercss .y {
+  animation: y 7s linear infinite alternate;
+  position:absolute;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - 100px));
+  }
+}
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - 100px));
+  }
+}
+
+.containerscreensaver {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: fixed;
+  perspective: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cubescreen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-15deg) rotateY(-20deg) translateZ(-100px);
+  transform-origin: center center -100px;
+  animation: around 5s linear infinite;
+}
+.cubescreen div {
+  width: 295px;
+  height: 295px;
+  display: block;
+  margin: 0;
+  position: absolute;
+}
+.cubescreen div a {
+  color: rgba(255, 255, 255, 0.78);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.44);
+  font-size: 5em;
+  text-decoration: none;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cubescreen .front {
+  transform: rotateY(0deg) translateZ(148px);
+  background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 19%,#e1e1e1 45%,#f6f6f6 100%);
+  border: 2px solid rgb(255, 255, 255);
+}
+.cubescreen .back {
+  transform: rotateX(-180deg) translateZ(148px);
+  background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 19%,#e1e1e1 45%,#f6f6f6 100%);
+  border: 2px solid rgb(255, 255, 255);
+}
+.cubescreen .back a {
+transform:rotate(180deg) translate(100px,40px);
+}
+.cubescreen .left {
+  transform: rotateY(-90deg) translateZ(148px);
+  background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 19%,#e1e1e1 45%,#f6f6f6 100%);
+  border: 2px solid rgb(255, 255, 255);
+}
+.cubescreen .right {
+  transform: rotateY(90deg) translateZ(148px);
+ background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 19%,#e1e1e1 45%,#f6f6f6 100%);
+  border: 2px solid rgb(255, 255, 255);
+}
+.cubescreen .top {
+  transform: rotateX(90deg) translateZ(148px);
+  background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 19%,#e1e1e1 45%,#f6f6f6 100%);
+  border: 2px solid rgb(255, 255, 255);
+}
+.cubescreen .bottom {
+  transform: rotateX(-90deg) translateZ(148px);
+  background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 19%,#e1e1e1 45%,#f6f6f6 100%);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+@keyframes around {
+  100% {
+    transform: rotateX(-15deg) rotateY(-380deg) translateZ(-100px);
+  }
+}
+</style>
+</html>
