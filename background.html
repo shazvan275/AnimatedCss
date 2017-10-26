@@ -1,0 +1,224 @@
+<html>
+<head>
+</head>
+<body>
+<div class="primarystart">
+	<ul>
+		<li id="one"><img src="http://img.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg?size=338&ext=jpg"></li>
+		<li id="two"><img src="http://img.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg?size=338&ext=jpg"></li>
+		<li id="three"><img src="http://img.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg?size=338&ext=jpg"></li>
+		<li id="four"><img src="http://img.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg?size=338&ext=jpg"></li>
+	</ul>
+</div>
+<figure class="icon-cards">
+  <div class="icon-cards__content">
+    <div class="icon-cards__item"></div>
+    <div class="icon-cards__item"></div>
+    <div class="icon-cards__item"></div>
+    <div class="icon-cards__item"></div>
+    <div class="icon-cards__item"></div>
+  </div>
+</figure>
+</body>
+<style>
+.primarystart li {
+    display: inline;
+    position: absolute;
+    top: 42%;
+    left: 45%;
+}
+.primarystart {
+    margin: auto;
+    width: 43vw;
+}
+.primarystart img {
+    width: 180px;
+	border-radius: 6px;
+}
+#one img{
+	opacity:0;
+	animation: one 5s cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+}
+@keyframes one {
+  from {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  25%, 85% {
+    opacity: 1;
+    transform: none;
+  }
+  100%{
+	opacity: 0;
+  }
+}
+#two img{
+	opacity:0;
+	animation: two 5s 2s cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+}
+@keyframes two {
+  from {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  25%, 85% {
+    opacity: 1;
+    transform: none;
+  }
+  100%{
+	opacity: 0;
+  }
+}
+#three img{
+	opacity:0;
+	animation: three 5s 4s cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+}
+@keyframes three {
+  from {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  25%, 85% {
+    opacity: 1;
+    transform: none;
+  }
+  100%{
+	opacity: 0;
+  }
+}
+#four img{
+	opacity:0;
+	animation: four 5s 6s cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+}
+@keyframes four {
+  from {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  25%, 85% {
+    opacity: 1;
+    transform: none;
+  }
+  100%{
+	opacity: 0;
+  }
+}
+
+.icon-cards{
+ opacity:1;
+ animation: show 12s ;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  80%{
+  opacity: 0;
+  }
+  100%{
+	opacity: 1;
+  }
+}
+
+.icon-cards {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 190px;
+  height: 210px;
+  margin: 0;
+  perspective: 800px;
+  transform: translate(-50%, -50%);
+}
+.icon-cards__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: translateZ(-182px) rotateY(0);
+  animation: carousel 15s infinite  cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+}
+.icon-cards__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 190px;
+  height: 210px;
+  border-radius: 6px;
+}
+.icon-cards__item:nth-child(1) {
+    
+  background:url('http://img.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg?size=338&ext=jpg');
+  transform: rotateY(0) translateZ(182px);
+   background-position: center;
+    background-size: cover;
+}
+.icon-cards__item:nth-child(2) {   
+ 
+  background:url('http://img.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg?size=338&ext=jpg');
+  transform: rotateY(72deg) translateZ(182px);
+  background-position: center;
+    background-size: cover;
+}
+.icon-cards__item:nth-child(3) {
+      
+   background:url('http://img.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg?size=338&ext=jpg');
+  transform: rotateY(144deg) translateZ(182px);
+  background-position: center;
+    background-size: cover;
+}
+.icon-cards__item:nth-child(4) {
+     
+   background:url('http://img.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg?size=338&ext=jpg');
+  transform: rotateY(216deg) translateZ(182px);
+   background-position: center;
+    background-size: cover;
+}
+.icon-cards__item:nth-child(5) {
+     
+  background:url('http://img.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg?size=338&ext=jpg');
+  
+  transform: rotateY(288deg) translateZ(182px);
+   background-position: center;
+    background-size: contain;
+}
+
+@keyframes carousel {
+  0%{ 
+    transform: translateZ(-182px) rotateY(360deg);
+  }
+  15%, 20% {
+    transform: translateZ(-182px) rotateY(0deg);
+  }
+  30%, 35% {
+    transform: translateZ(-182px) rotateY(-216deg);
+  }
+  40%, 45% {
+    transform: translateZ(-182px) rotateY(216deg);
+  }
+  55%, 60% {
+    transform: translateZ(-182px) rotateY(-72deg);
+  }
+  70%, 75% {
+    transform: translateZ(-182px) rotateY(72deg);
+  }
+  85%, 95% {
+    transform: translateZ(0px) rotateY(72deg);
+  }
+  100% {
+    transform: translateZ(-182px) rotateY(360deg);
+  }
+  
+}
+
+body {
+  background: #202126;
+}
+
+</style>
+</html>
+
